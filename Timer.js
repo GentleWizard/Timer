@@ -4,7 +4,6 @@ let second = 0;
 let interval;
 let startStop = false;
 
-
 document.getElementById("playPause").onclick = () => {
         playPause()
 };
@@ -28,7 +27,6 @@ function runTimer() {
 }    
 };
 
-
 function timer() {       
 if (second < 60) {
         second++;     
@@ -38,8 +36,7 @@ if (second < 60) {
 }if (minute > 59) {
         minute = 0;
         hour++;
-}if (hour > 60) {
-       restart() 
+}if (hour > 60) { 
 };
 
 if (second < 10) {
@@ -57,14 +54,13 @@ if (second < 10) {
 }
 };
 
-
-document.getElementById("restart").onclick = function restart() {
+document.getElementById("restart").onclick = () => {
         hour = 0;
         minute = 0;
         second = 0;
-        document.getElementById("Seconds").textContent = second + "s";
-        document.getElementById("Minutes").textContent = minute + "m";
-        document.getElementById("Hours").textContent = hour + "h";
+        document.getElementById("Seconds").textContent = "0" + second + "s";
+        document.getElementById("Minutes").textContent = "0" + minute + "m";
+        document.getElementById("Hours").textContent = "0" + hour + "h";
         document.getElementById("playPause").textContent = "play_arrow"
         clearInterval(interval);
 };
