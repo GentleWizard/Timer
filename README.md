@@ -37,4 +37,4 @@ To adjust the timer, you can modify the JavaScript code in the Timer.js file.
 
 License
 
-This project is licensed under the terms of the MIT license. See the LICENSE file for details.
+This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
